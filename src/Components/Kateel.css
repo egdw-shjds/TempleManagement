@@ -1,0 +1,75 @@
+.kateel {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 97vw;
+    border-radius: 15px;
+}
+
+
+.kateel a {
+    color: white;
+    margin-left: 10px;
+    border-right: 1px solid white;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.kateel a:last-child {
+    border-right: none;
+}
+
+
+.kateel-left, .kateel-right {
+    display: flex;
+    
+}
+
+.kateel-section {
+    display: flex; /* Add this to make the images and content display side by side */
+    text-align: center;
+    padding-top: 75px;
+    width: 100%; /* Adjust this to fit the width of the page */
+}
+
+.kateel-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    width: 50%; /* Adjust this to take up half the page */
+    gap: 10px; 
+}
+
+.kateel-images div {
+    text-align: center;
+    width: 45%; 
+    margin-bottom: 10px; 
+}
+
+.kateel-images img {
+    width: 425pt;  
+    height: 250pt;  
+    object-fit: cover;  
+    object-position: center;
+    border: 5px solid rgb(67, 62, 62);  /* Adjust as needed */
+    border-radius: 10px; /* Adjust as needed */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.content-right {
+    width: 50%; /* Adjust as needed to take up half the page */
+    padding-left: 10px;
+    align-self: flex-start;
+    text-align: justify; /* Add some space between the images and the content */
+}
+
+.highlight {
+    background-color: rgb(244, 244, 208);
+    border-radius: 10px;
+}

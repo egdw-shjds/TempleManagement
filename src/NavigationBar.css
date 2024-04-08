@@ -1,0 +1,174 @@
+/* NavigationBar.css */
+body {
+    background-image: url('https://i.pinimg.com/564x/63/0a/a8/630aa804b3c8d3a9234000f7b995a5e3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #fff; /* Adjust the 0.7 at the end to customize opacity */
+    backdrop-filter: blur(5px); /* Adjust the 5px for intensity of blur */
+    background: rgba(0, 0, 0, 0.7);
+    width: 95vw;
+    border-radius: 15px;
+}
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 25pt;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .navbar-container .left,
+  .navbar-container .middle{
+    display: flex;
+  }
+
+  .navbar-container .right { 
+    flex: 0;
+  }
+
+  .centered-header {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 200px;
+    color: aliceblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .centered-header1 {
+    text-align: center;
+    font-size: 60px;
+    color: aliceblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .link-box {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .link-box:hover {
+    background-color: #ddd;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* This makes the .right div take up the full height of the viewport */
+  }
+  
+  .link-box {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 20px; /* Increase padding to make the box bigger */
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px; /* Increase font size to make the text bigger */
+    border-radius: 15px; /* Add this line to make the box rounded */
+    background-color: #ddd;
+  }
+  
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar {
+      height: 200px;
+    }
+  
+    .navbar-container .left,
+    .navbar-container .middle,
+    .navbar-container .right {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(15, 76, 145);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    padding: 20px;
+}
+
+.dashboard a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.dashboard-center {
+    text-align: center;
+}
+
+
+.temples-section {
+    margin-top: 70px; /* Adjust as needed to position the heading below the navigation bar */
+    text-align: center;
+    width: 100%; /* Adjust to fit the width of the page */
+}
+
+.temples-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust to properly display 2 images */
+}
+
+.temples-images div {
+    text-align: center;
+    width: 45%; /* Adjust as needed to display 2 images per row */
+    margin-bottom: 10px; /* Add spacing between the rows */
+}
+
+.temples-images img {
+    width: 100%;  /* Adjust as needed */
+    height: 80%;  /* Adjust as needed */
+    object-fit: cover;  /* This will ensure that your entire image fits into the box */
+    object-position: center;  /* This will center the image within the box */
+    border: 5px solid rgb(67, 62, 62);  /* Adjust as needed */
+    border-radius: 10px; /* Adjust as needed */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.templeName {
+  color: white;  /* Makes the text color white */
+  font-size: 24px; /* Adjust as needed */
+  text-decoration: none;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+} 

@@ -1,0 +1,59 @@
+/* Add your existing styles here */
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(15, 76, 145);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    padding: 20px;
+}
+
+.dashboard a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.dashboard-center {
+    text-align: center;
+}
+
+/* Styling for the temples section */
+.temples-section {
+    margin-top: 60px; /* Add spacing below the navigation bar */
+    text-align: center;
+    width: 175vh;
+    position: fixed; /* Center the heading */
+}
+
+/* Add your existing styles here */
+
+
+
+.temples-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.temples-images div {
+    text-align: center;
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 20px; /* Add spacing between the rows */
+}
+
+/* Add your existing styles here */
+
+/* Add your existing styles here */
+
+.temples-images img {
+    width: 300px;  /* Adjust as needed */
+    height: 170px;  /* Adjust as needed */
+    object-fit: contain;  /* This will ensure that your entire image fits into the box */
+    object-position: center;  /* This will center the image within the box */
+}
