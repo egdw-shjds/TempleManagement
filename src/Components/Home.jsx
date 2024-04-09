@@ -7,7 +7,7 @@ function Home() {
     const navigate = useNavigate()
     axios.defaults.withCredentials = true
     const handleLogout = () => {
-        axios.get("http://localhost:3000/auth/logout")
+        axios.get("https://temple-management.vercel.app/auth/logout")
             .then(res => {
                 if (res.data.status) {
                     navigate('/')
