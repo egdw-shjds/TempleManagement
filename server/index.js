@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use('/auth', UserRouter);
 app.use('/bookpooja', BookpoojaRouter); // use the new route
 
-mongoose.connect('mongodb://127.0.0.1:27017/authentication');
+mongoose.connect('mongodb+srv://shawnjoywin:Shawn123@cluster0.y38rqvr.mongodb.net/?retryWrites=true&w=majority');
 
 app.listen(process.env.PORT, () => {
     console.log("Server is Running");
