@@ -14,7 +14,7 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        Axios.post('https://temple-management.vercel.app/auth/signup', { 
+        Axios.post('http://localhost:3000/auth/signup', { 
             name, 
             email, 
             mobile, 
@@ -60,9 +60,3 @@ const Signup = () => {
 }
 
 export default Signup
-
-// rzp_test_RUPIihInhBITaD
-
-// KbqoxK1H8BB6HmvYCeM8hDzO
-
-// https://rzp.io/l/H7RURQzD

@@ -45,4 +45,4 @@ router.get('/logout', (req, res) => {
     return res.json({ status: true })
 })
 
-export { router as UserRouter }
+export { router as UserRouter}

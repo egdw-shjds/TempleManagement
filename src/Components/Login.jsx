@@ -13,7 +13,7 @@ const Login = () => {
     Axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('https://temple-management.vercel.app/auth/login', { 
+        Axios.post('http://localhost:3000/auth/login', { 
             email, 
             password, 
         }).then(response => {
