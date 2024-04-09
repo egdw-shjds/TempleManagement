@@ -12,7 +12,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: ["https://temple-management-frontend.vercel.app"],
+    origin: "*",
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
 }));
