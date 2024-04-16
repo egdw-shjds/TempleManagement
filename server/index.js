@@ -4,7 +4,6 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import { UserRouter } from './routes/user.js';
-import { BookpoojaRouter } from './routes/bookpooja.js'; // import the new route
 
 dotenv.config();
 
@@ -18,9 +17,8 @@ app.use(cors({
 }));
 app.use(cookieParser());
 app.use('/auth', UserRouter);
-app.use('/bookpooja', BookpoojaRouter); // use the new route
 
-mongoose.connect('mongodb+srv://shawnjoywin:Shawn123@cluster0.y38rqvr.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb://127.0.0.1:27017/authentication');
 
 app.listen(process.env.PORT, () => {
     console.log("Server is Running");

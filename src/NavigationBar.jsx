@@ -1,16 +1,9 @@
-// src/components/NavigationBar.js
-
 import React from 'react';
 import './NavigationBar.css';
 import { Link, useLocation } from 'react-router-dom';
 
 function NavigationBar() {
   const location = useLocation();
-
-  // Hide the navigation bar on the signup page
-  if (location.pathname === '/signup' || location.pathname === '/login') {
-    return null;
-  }
 
   return (
     <>

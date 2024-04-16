@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom';
 const Donate = () => {
 
     const redirectToRazorpay = () => {
-        // Replace with your actual Razorpay payment URL
         const paymentUrl = 'https://rzp.io/l/0J85z4Tj6';
-        window.location.href = paymentUrl; // Redirect to Razorpay payment page
+        window.location.href = paymentUrl;
     };
 
     return (
